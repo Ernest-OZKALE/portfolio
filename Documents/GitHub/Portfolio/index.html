@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Webdesigner</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <h1>John Doe</h1>
-            <p>Webdesigner & Creative Developer</p>
+    <header id="home" class="hero flex items-center justify-center text-center text-white h-screen bg-fixed bg-cover bg-center">
+        <div class="hero-content space-y-4">
+            <h1 class="text-4xl md:text-5xl font-bold">John Doe</h1>
+            <p class="text-xl">Webdesigner & Creative Developer</p>
         </div>
     </header>
 
-    <section id="about" class="content">
-        <h2>À propos</h2>
-        <p>Passionné par la création d'expériences numériques innovantes, je conçois des interfaces modernes et intuitives.</p>
+    <section id="about" class="content container mx-auto py-16 text-center">
+        <h2 class="text-2xl font-semibold mb-4">À propos</h2>
+        <p class="max-w-2xl mx-auto">Passionné par la création d'expériences numériques innovantes, je conçois des interfaces modernes et intuitives.</p>
     </section>
 
-    <section id="skills" class="parallax" data-speed="0.2">
-        <div class="overlay">
-            <h2>Compétences</h2>
-            <ul>
+    <section id="skills" class="parallax flex items-center justify-center" data-speed="0.2">
+        <div class="overlay text-white text-center space-y-2">
+            <h2 class="text-2xl font-semibold mb-4">Compétences</h2>
+            <ul class="space-y-1">
                 <li>Design UI/UX</li>
                 <li>HTML/CSS/JavaScript</li>
                 <li>Animation & Motion Design</li>
@@ -30,25 +31,25 @@
         </div>
     </section>
 
-    <section id="portfolio" class="content">
-        <h2>Portfolio</h2>
-        <div class="grid">
-            <div class="item">Projet 1</div>
-            <div class="item">Projet 2</div>
-            <div class="item">Projet 3</div>
+    <section id="portfolio" class="content container mx-auto py-16 text-center">
+        <h2 class="text-2xl font-semibold mb-8">Portfolio</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="item h-48 rounded-lg flex items-center justify-center bg-purple-500 text-white">Projet 1</div>
+            <div class="item h-48 rounded-lg flex items-center justify-center bg-purple-500 text-white">Projet 2</div>
+            <div class="item h-48 rounded-lg flex items-center justify-center bg-purple-500 text-white">Projet 3</div>
         </div>
     </section>
 
-    <section id="cv" class="parallax" data-speed="0.3">
-        <div class="overlay">
-            <h2>CV</h2>
-            <p>Télécharger mon <a href="#">CV</a></p>
+    <section id="cv" class="parallax flex items-center justify-center" data-speed="0.3">
+        <div class="overlay text-white text-center space-y-4">
+            <h2 class="text-2xl font-semibold">CV</h2>
+            <p>Télécharger mon <a class="underline" href="#">CV</a></p>
         </div>
     </section>
 
-    <footer class="content">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:john@example.com">john@example.com</a></p>
+    <footer class="content bg-gray-800 text-white text-center py-12">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <p>Email : <a class="underline" href="mailto:john@example.com">john@example.com</a></p>
     </footer>
 
     <script src="script.js"></script>

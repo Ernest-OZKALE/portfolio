@@ -1,37 +1,7 @@
-/* Color palette */
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #e67e22;
-    --accent-color: #9b59b6;
-    --text-color: #333;
-    --background-color: #fafafa;
-}
-
-/* Base styles */
+/* Minimal reset */
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background: var(--background-color);
-}
-
-h1, h2 {
-    margin: 0 0 20px;
-    color: var(--primary-color);
-}
-
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--secondary-color);
-}
-
-p {
-    margin: 0 0 20px;
 }
 
 /* Hero section */
@@ -94,20 +64,7 @@ p {
     transform: translateY(0);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
 .item {
-    height: 200px;
-    background: var(--accent-color);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
