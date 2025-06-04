@@ -1,14 +1,33 @@
+/* Color palette */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e67e22;
+    --accent-color: #9b59b6;
+    --text-color: #333;
+    --background-color: #fafafa;
+}
+
 /* Base styles */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #fafafa;
+    color: var(--text-color);
+    background: var(--background-color);
 }
 
 h1, h2 {
     margin: 0 0 20px;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
 
 p {
@@ -83,7 +102,8 @@ p {
 
 .item {
     height: 200px;
-    background: #e0e0e0;
+    background: var(--accent-color);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
